@@ -24,9 +24,6 @@ class Solution:
 
             p_last = stack[-1]
 
-            # print("Step %s: p_last %s p_curr %s expected parentheses[p_last] %s" % (count, p_last, p_curr, parentheses[p_last]))
-            # print("Step %s: p_last %s p_curr %s parentheses[p_last] %s" % (count, p_last, p_curr))
-
             if(p_last in parentheses.keys() and p_curr == parentheses[p_last]):
                 stack.pop()
                 print("Step %s: %s == %s\tstack %s\t" % (count, p_curr, parentheses[p_last], stack))
